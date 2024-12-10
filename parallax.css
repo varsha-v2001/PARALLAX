@@ -1,0 +1,96 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Prata", serif;
+}
+header{
+    z-index: 100000;
+}
+body{
+    min-height: 100vh;
+    background: linear-gradient(#2b1055 50%,#2d4b8d);
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+section::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,black,transparent);
+    z-index: 1000;
+
+}
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+
+}
+section img#moon{
+    width: 200px; 
+    height: 200px;
+    left: 43%;
+    transform: translateY(-10px);
+}
+#night_clouds{
+    width:500px;
+    height: 400px;
+    margin-left: 500px;
+    transform: translateY(-70px);
+}
+section img#mountainfront{
+    z-index: 10;
+    width: 100%;
+}
+#text{
+    position: absolute;
+    color:rgb(169, 123, 25);
+    font-family: "Lugrasimo", serif;
+    white-space: nowrap;
+    font-size: 7.5vw;
+    z-index: 9;
+    top: 28%;
+    transform: translateX(60%) ;
+}
+#btn{
+    text-decoration: none;
+    display: inline-block;
+    position: absolute;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: white;
+    color: black;
+    font-size: 1.5em;
+    z-index: 9;
+    transform: translateY(330px);
+
+}
+.sec{
+    position: relative;
+    padding: 100px;
+    background: black;
+}
+.sec h2{
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: white;
+}
+.sec p{
+    font-size: 1em;
+    color: white;
+}
